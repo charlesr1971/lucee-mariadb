@@ -38,7 +38,7 @@ component extends="types.Driver" output="no" implements="types.IDatasource" {
 		// Timezone
 		if(!isNull(form.timezone) && !isEmpty(form.timezone)) local.tz=form.timezone;
 		else local.tz=toString(getTimezone());
-		form['custom_serverTimezone']=tz;
+		form['custom_serverTimezone']=local.tz;
 
 	}
 
